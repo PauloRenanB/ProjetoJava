@@ -1,4 +1,14 @@
 public class Leitor extends Pessoa implements Emprestado{
+
+    public int getLivrosEmprestados() {
+        return livrosEmprestados;
+    }
+
+    public void setLivrosEmprestados(int livrosEmprestados) {
+        this.livrosEmprestados = livrosEmprestados;
+    }
+
+    private int livrosEmprestados;
     @Override
     public void entrar() {
         System.out.println("Leitor entrou na biblioteca.");

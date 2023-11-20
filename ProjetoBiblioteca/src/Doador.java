@@ -1,5 +1,24 @@
 public class Doador extends Pessoa implements Emprestado{
 
+    public int getLivrosDoados() {
+        return livrosDoados;
+    }
+
+    public void setLivrosDoados(int livrosDoados) {
+        this.livrosDoados = livrosDoados;
+    }
+
+    private int livrosDoados;
+
+    public int getLivrosEmprestados() {
+        return livrosEmprestados;
+    }
+
+    public void setLivrosEmprestados(int livrosEmprestados) {
+        this.livrosEmprestados = livrosEmprestados;
+    }
+
+    private int livrosEmprestados;
 
     @Override
     public void entrar() {
